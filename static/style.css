@@ -1,11 +1,18 @@
+:root{
+    --primary-color: #e2b9f6;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.body {
+    background-image:url(../static/img/puertaRecorte.jpeg);
+    background-size:cover;
+}
+
 .header{
-    background-color: rgb(222, 157, 249);
     position: relative;
     top: 0;
     left: 0;
@@ -14,18 +21,32 @@
 }
 .header h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
+
     color:rgb(34, 34, 47);
 }
 #logo{
-    position: relative;
+    /* position: relative; */
+    padding-left: 50px;
+    padding-top: 10px;
+    animation: bounce;
+    animation-duration: 3s;
+
 }
 .nav{
     padding: 3px;
     /* opacity: 50%; */
+    /* background-color: rgba(255, 255, 255, 0.3); */
     padding-top: 5px;
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
+    background: linear-gradient(to bottom, rgb(247, 118, 247),30%, rgb(243, 222, 243, 0.1));
+
+
+    /*
+    background: #d9a7c7; /* fallback for old browsers degradado lineal */
+    /*background: -webkit-linear-gradient(to bottom, #d9a7c7, #fffcdc); /* Chrome 10-25, Safari 5.1-6 */
+   /* background: linear-gradient(to bottom, #d9a7c7, #fffcdc); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
 
 }
 
@@ -66,6 +87,22 @@ a{
 
     padding: 15px;
     font-size:small;
+}
+
+.main h1{
+    text-align: center; 
+    color:rgb(95, 11, 180);
+    text-shadow: -1px -3px 20px rgb(240, 237, 237);
+    -webkit-text-stroke: 1px rgb(229, 169, 238);
+    font-size: 60px;
+}
+.main h2{
+    text-align: center; 
+    font-style: italic;
+    font-size: 40px; 
+    color:rgb(154, 10, 187);
+    text-shadow: -2px -4px 30px rgb(13, 12, 12);
+    -webkit-text-stroke: 1px rgb(229, 169, 238);
 
 }
 
@@ -84,10 +121,11 @@ a{
 
 } */
 .footer {
-    background-color: rgb(222, 157, 249);
-    position: relative;
-    top: 0;
+    background-color: var(--primary-color);
+    position: fixed;
     left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
     z-index: 9999;
     padding: 5px;
@@ -99,5 +137,10 @@ a{
 .footer p{
     margin-top: 5px;
     font-size: small;
-
+}
+.main d {
+    text-align: center;
+    background-image: url(./img/cartelConAbejorro.jpg);
+    background-size:cover;
+    background-position: center;
 }
