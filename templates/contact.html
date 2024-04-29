@@ -35,13 +35,13 @@
     <main >
         <h2 style="text-align: center; color:rgb(92, 3, 175); font-size: 18px;" >Registro para consultas</h2>
         
-        <section  >
+        <section>
         <form class="form"  action="#" method="get">
-        <fieldset >
+        <fieldset class="fieldset" >
             <legend>Contacto</legend>
             <div class="form-control">
                 <label for="">Nombre</label>
-                <input type="text" name="firstname" id="firstname" placeholder="Ingresa tu nombre"required/>
+                <input type="text" name="firstname" id="firstname" placeholder="Ingresa tu nombre" required/>
             </div>
             <div class="form-control">
                 <label for="">Apellido</label>
@@ -54,14 +54,14 @@
                 <input type="email" name="email" id="email" placeholder="Ingresa tu mail" required/>
             </div>
             <div class="form-control">
-                <label for="" id="phone" >Teléfono</label>
-                <input type="phone" name="phone" id="phone" placeholder="Ingrese su teléfono"/>
+                <label for="">Teléfono</label>
+                <input type="phone" name="phone" id="phone" placeholder="Ingresa tu teléfono"/>
             </div>
 
             <div class="form-control">
-                <label>Pais de origen</label>
+                <label>País de origen</label>
                 <select name="pais">
-                    <option value=""> Busca tu país</option>
+                    <option value="" style="background-color:rgb(224, 187, 246); font-family:inherit;"> Busca tu país</option>
                     <option value="Afganistán" id="AF">Afganistán</option>
                     <option value="Albania" id="AL">Albania</option>
                     <option value="Alemania" id="DE">Alemania</option>
@@ -302,26 +302,32 @@
                     </select>
             </div>
             <div class="form-control">
-                <label for="message">Mensaje</label>
-            <textarea
+                <label for="">Mensaje </label>
+            <textarea class="form__input--message"
                 id="message"
-                cols="30"
-                rows="10"
-                placeholder="Introduce tu mensaje"
+                
+                placeholder="Dejanos tu mensaje..."
                 required
             ></textarea>
             </div>
-
-                <br>
-                <div class="form-control">
-                    <input type="submit" value="Enviar" class="submit-btn" />
-                </div>
-                <br>
+            <br>
+            <br>
+            <br>
+            
         </fieldset>
     </form>
-        </section>
-
-    </main>
+    <div class="wrapper">
+        <button>
+          Enviar 
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    
+</section>
+</main>
 
     <footer class="footer">
         <ul class="nav-links">

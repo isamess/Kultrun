@@ -6,10 +6,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 400 to 900*/
+
+.playfair-display p {
+  font-family: Playfair Display, serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .body {
     background-image:url(../static/img/puertaRecorte.jpeg);
     background-size:cover;
+    min-height: 100vh;
+    width: 100%;
+
 }
 
 .header{
@@ -30,7 +42,10 @@
     padding-top: 10px;
     animation: bounce;
     animation-duration: 3s;
-
+}
+#logo hover{
+    animation: bounce;
+    animation-duration: 3s infinite ;
 }
 .nav{
     padding: 3px;
@@ -83,20 +98,21 @@ a{
     text-decoration: none;
     font-weight: bold;
 }
-.main p{
-
+.titulo p{
     padding: 15px;
-    font-size:small;
+    font-size:15px;
+    font-family: Playfair Display;
+
 }
 
-.main h1{
+.titulo h1{
     text-align: center; 
     color:rgb(95, 11, 180);
     text-shadow: -1px -3px 20px rgb(240, 237, 237);
     -webkit-text-stroke: 1px rgb(229, 169, 238);
     font-size: 60px;
 }
-.main h2{
+.titulo h2{
     text-align: center; 
     font-style: italic;
     font-size: 40px; 
@@ -143,4 +159,14 @@ a{
     background-image: url(./img/cartelConAbejorro.jpg);
     background-size:cover;
     background-position: center;
+}
+#about {
+    width: 800px;
+    text-align: center;
+    margin:auto
+}
+.ab-image{
+    background-image: url(../static/img/collage6x5.jpg);
+    background-size: cover;
+    height: 650px;;
 }
