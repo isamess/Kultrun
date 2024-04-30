@@ -1,0 +1,73 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    row-gap: 20px;
+    background-color: transparent;
+    margin-top: 10px;
+
+}
+
+.card-item{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    transform-origin: center left;
+    transition: all 450ms;
+}
+
+.card-item-img {
+    width: 200px;
+    object-fit: cover;
+    border-width: 2px;
+    border-color: blueviolet;
+}
+
+.card-item-detail {
+    /* posiciona el elemento de forma absoluta con respecto a su contenedor principal */
+    position: absolute;
+    /* elemento se posicionará justo por encima del borde inferior de su contenedor */
+    bottom: -100%;
+    padding: 30px;
+    max-height: 100%;
+    line-height: 15px;
+    font-weight: bold;
+    background-color:rgb(218, 195, 236);
+    /*transición suave para el cambio de la propiedad bottom. */
+    transition: bottom 0.6s ease-in-out;
+    width: 100%;
+    border-width: 2px;
+    border-color: blueviolet;
+}
+
+.card-item:hover{
+    opacity: 0.9;
+}
+
+.card-item:hover .card-item-detail {
+    bottom: 0;
+}
+  
+.card-item-detail-title {
+    color: red;
+    margin: 5px 0px 0px 0px;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    align-items: center;
+    font-weight: bold;
+}
+  
+.card-item-detail {
+    color:rgb(106, 3, 3);
+    font-size: 0.5em;
+    margin: 3px 0px;
+
+}
+
+
